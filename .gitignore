@@ -1,0 +1,17 @@
+# Dependencies
+node_modules
+
+# Vite's default build dir (we build to docs/ instead — see vite.config.js)
+dist
+
+# IMPORTANT: docs/ is the built site GitHub Pages serves — it is committed,
+# so it is deliberately NOT ignored here.
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor / OS
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
