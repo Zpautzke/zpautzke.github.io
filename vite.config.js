@@ -11,11 +11,11 @@ import react from '@vitejs/plugin-react'
 //   Change REPO_NAME below to your GitHub repository name.
 // - `build.outDir` is set to 'docs' because GitHub Pages is configured to
 //   serve the site from the `/docs` folder on the main branch.
-const REPO_NAME = 'p0'
-
+// User/org site (repo named <user>.github.io) is served at the domain root,
+// so base is '/'. (A project site would use base: `/${REPO_NAME}/`.)
 export default defineConfig({
   plugins: [react()],
-  base: `/${REPO_NAME}/`,
+  base: '/',
   build: {
     outDir: 'docs',
     emptyOutDir: true,
